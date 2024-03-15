@@ -12,3 +12,4 @@ C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptogr
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.pdb
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.genruntimeconfig.cache
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\ref\Ripemd160.dll
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.sourcelink.json

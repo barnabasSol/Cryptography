@@ -1,4 +1,3 @@
-public class Rounds
-{
-    
-}
+namespace Ripemd160.Utils;
+
+public class Shifts { }
