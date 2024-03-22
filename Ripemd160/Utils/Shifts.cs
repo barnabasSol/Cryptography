@@ -1,3 +1,3 @@
 namespace Ripemd160.Utils;
 
-public class Shifts { }
+public sealed class Shifts { }

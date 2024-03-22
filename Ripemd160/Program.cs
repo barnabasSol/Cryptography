@@ -1,12 +1,8 @@
 ﻿using Ripemd160.Utils;
 
-foreach (var item in InitVariables.Buffers)
+var buffers = new BufferProvider();
+
+foreach (var item in buffers.PrimeValues)
 {
-    var buff_len = Convert.ToString(item, 2).ToString().Length;
-    Console.WriteLine(buff_len);
+    Console.WriteLine($"{item}   {item.Length}   {BufferProvider.ToHex(item)}");
 }
-var x = InitVariables.Buffers.Select(s => Convert.ToString(s, 2).ToString().Length).Sum();
-
-Console.WriteLine(x);
-
-Console.WriteLine("--------------------------------");
