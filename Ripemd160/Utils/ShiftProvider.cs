@@ -18,11 +18,3 @@ public sealed class ShiftProvider
         8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11,
     ];
 }
-
-public static class UIntExtensions
-{
-    public static uint RotateLeft(this uint value, int shift)
-    {
-        return (value << shift) | (value >> (32 - shift));
-    }
-}
