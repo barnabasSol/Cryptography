@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5bLqOpz8FIhClsEAEGrMRRkjapc/8bdpBYvKAqdywDjAA35fkEorB1DfzyQL6Jgp2gaOtRmkmBEO8cJRaxVAcQ==",
+  "dgSpecHash": "eLV03fd74X41TMZV5vOyNKkH0r1XvIXDNR6WdEMqMtQ3NIuhZOaOxCGL1fhdDNwG9h9lcjm8D3IYUzBVJS8KRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Barnabas Solomon\\OneDrive\\Desktop\\misc\\C# projects\\ConsoleApps\\Cryptography\\Ripemd160\\Ripemd160.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Barnabas Solomon\\.nuget\\packages\\objectdumper.net\\4.1.17\\objectdumper.net.4.1.17.nupkg.sha512"
+  ],
   "logs": []
 }

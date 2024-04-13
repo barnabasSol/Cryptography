@@ -3,13 +3,16 @@ C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptogr
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\bin\Debug\net8.0\Ripemd160.runtimeconfig.json
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\bin\Debug\net8.0\Ripemd160.dll
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\bin\Debug\net8.0\Ripemd160.pdb
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\bin\Debug\net8.0\ObjectDumping.dll
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.csproj.AssemblyReference.cache
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.AssemblyInfoInputs.cache
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.AssemblyInfo.cs
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.csproj.CoreCompileInputs.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.sourcelink.json
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.csproj.Up2Date
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.dll
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\refint\Ripemd160.dll
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.pdb
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.genruntimeconfig.cache
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\ref\Ripemd160.dll
-C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Ripemd160\obj\Debug\net8.0\Ripemd160.sourcelink.json

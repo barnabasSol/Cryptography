@@ -1,25 +1,24 @@
 namespace Ripemd160.Utils;
 
-public class Constants
+public sealed class Constants
 {
     private static readonly uint[] ForValues =
-    {
+    [
         0x00000000,
         0x5A827999,
         0x6ED9EBA1,
         0x8F1BBCDC,
         0xA953FD4E,
-    };
+    ];
 
     private static readonly uint[] ForPrimeValues =
-    {
+    [
         0x50A28BE6,
         0x5C4DD124,
         0x6D703EF3,
         0x7A6D76E9,
         0x00000000,
-    };
-
+    ];
     public static uint ToAddForValueAt(int index)
     {
         return index switch

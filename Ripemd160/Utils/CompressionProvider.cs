@@ -6,7 +6,7 @@ public sealed class CompressionProvider
 {
     public static void ComputeHash(char[] block, BufferProvider buf)
     {
-        var _16bits_word_chunk = block.Chunk(32).ToList();
+        var _32bits_word_chunk = block.Chunk(32).ToArray();
 
         for (int i = 0; i < 80; i++)
         {
@@ -14,10 +14,9 @@ public sealed class CompressionProvider
                 (
                     buf.A
                     + FunctionProvider.Function(i, buf.B, buf.C, buf.D)
-                    + Convert.ToUInt32(
-                        new string(_16bits_word_chunk[MessageWordSelect.ForValues[i]]),
-                        2
-                    )
+                    + Convert
+                        .ToUInt32(new string(_32bits_word_chunk[MessageWordSelect.ForValues[i]]), 2)
+                        .ToLittleEndianHex()
                     + Constants.ToAddForValueAt(i)
                 ).RotateLeft(ShiftProvider.LeftRotateAmounts[i]) + buf.E;
 
@@ -31,10 +30,12 @@ public sealed class CompressionProvider
                 (
                     buf.APrime
                     + FunctionProvider.Function(79 - i, buf.BPrime, buf.CPrime, buf.DPrime)
-                    + Convert.ToUInt32(
-                        new string(_16bits_word_chunk[MessageWordSelect.ForPrimeValues[i]]),
-                        2
-                    )
+                    + Convert
+                        .ToUInt32(
+                            new string(_32bits_word_chunk[MessageWordSelect.ForPrimeValues[i]]),
+                            2
+                        )
+                        .ToLittleEndianHex()
                     + Constants.ToAddForPrimeValueAt(i)
                 ).RotateLeft(ShiftProvider.PrimeLeftRotateAmounts[i]) + buf.EPrime;
 
@@ -46,6 +47,7 @@ public sealed class CompressionProvider
         }
 
         uint temp = BufferProvider.H1 + buf.C + buf.DPrime;
+
         BufferProvider.H1 = BufferProvider.H2 + buf.D + buf.EPrime;
         BufferProvider.H2 = BufferProvider.H3 + buf.E + buf.APrime;
         BufferProvider.H3 = BufferProvider.H4 + buf.A + buf.BPrime;

@@ -1,11 +1,43 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "ObjectDumper.NET/4.1.17": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ObjectDumping.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ObjectDumping.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ObjectDumper.NET/4.1.17": {
+      "sha512": "RpQW1sQcZ7bE2X3j6OSxtHOZYhypalG+J1yF5EU8R/3w9eNpQFnbSBgADlgBXAivWk7lo8NHqSPX1G1dlQFC4Q==",
+      "type": "package",
+      "path": "objectdumper.net/4.1.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ObjectDumper.png",
+        "README.md",
+        "lib/net48/ObjectDumping.dll",
+        "lib/net6.0/ObjectDumping.dll",
+        "lib/net7.0/ObjectDumping.dll",
+        "lib/netstandard1.2/ObjectDumping.dll",
+        "lib/netstandard2.0/ObjectDumping.dll",
+        "lib/netstandard2.1/ObjectDumping.dll",
+        "objectdumper.net.4.1.17.nupkg.sha512",
+        "objectdumper.net.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "ObjectDumper.NET >= 4.1.17"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Barnabas Solomon\\.nuget\\packages\\": {}
@@ -50,6 +82,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "ObjectDumper.NET": {
+            "target": "Package",
+            "version": "[4.1.17, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
