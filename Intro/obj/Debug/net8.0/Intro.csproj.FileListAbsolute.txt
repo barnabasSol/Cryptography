@@ -13,3 +13,7 @@ C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptogr
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Intro\obj\Debug\net8.0\Intro.pdb
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Intro\obj\Debug\net8.0\Intro.genruntimeconfig.cache
 C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Intro\obj\Debug\net8.0\ref\Intro.dll
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Intro\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Intro\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Intro\obj\Debug\net8.0\Intro.csproj.AssemblyReference.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\misc\C# projects\ConsoleApps\Cryptography\Intro\obj\Debug\net8.0\Intro.csproj.Up2Date

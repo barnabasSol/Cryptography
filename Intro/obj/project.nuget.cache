@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xsN94QkDU4F6h7FFds5sFMn/OUom2tMJn3CyHDyby2zvFpbnBo3+QQzp4NiPd8PbGyzJrlqIt63PTJuLnoMB7w==",
+  "dgSpecHash": "1mzzBEJrn6NafU83pVFCy5civMifjb0duG9c7XC1pGLw98wmXFSK3EIjJqpnqWV7JPcRwcUB5AQ8I5n8kgN9IA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Barnabas Solomon\\OneDrive\\Desktop\\misc\\C# projects\\ConsoleApps\\Cryptography\\Intro\\Intro.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Barnabas Solomon\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

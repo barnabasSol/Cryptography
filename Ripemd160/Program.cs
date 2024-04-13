@@ -1,7 +1,7 @@
 ﻿using Ripemd160.Utils;
 using Ripemd160.Utils.Extensions;
 
-string message = "a";
+string message = "abc";
 string input = InputProvider.InitialProcess(message);
 var chunk = input.Chunk(512);
 var buf = new BufferProvider();
@@ -12,4 +12,4 @@ foreach (var block in chunk)
     CompressionProvider.ComputeHash(block, buf);
 }
 
-buf.PrintHash();
+Console.WriteLine(buf.HashResult());

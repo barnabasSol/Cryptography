@@ -9,7 +9,6 @@ public sealed class InputProvider
     {
         var toasci = Encoding.ASCII.GetBytes(message);
         var tobits = toasci.Select(s => Convert.ToString(s, 2).PadLeft(8, '0'));
-
         string joined_bits = string.Join("", tobits);
 
         string original_bit_length_to_pad = Convert

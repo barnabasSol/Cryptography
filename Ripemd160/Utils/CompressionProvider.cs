@@ -46,12 +46,12 @@ public sealed class CompressionProvider
             buf.BPrime = buf.temp;
         }
 
-        uint temp = BufferProvider.H1 + buf.C + buf.DPrime;
+        uint temp = buf.H1 + buf.C + buf.DPrime;
 
-        BufferProvider.H1 = BufferProvider.H2 + buf.D + buf.EPrime;
-        BufferProvider.H2 = BufferProvider.H3 + buf.E + buf.APrime;
-        BufferProvider.H3 = BufferProvider.H4 + buf.A + buf.BPrime;
-        BufferProvider.H4 = BufferProvider.H0 + buf.B + buf.CPrime;
-        BufferProvider.H0 = temp;
+        buf.H1 = buf.H2 + buf.D + buf.EPrime;
+        buf.H2 = buf.H3 + buf.E + buf.APrime;
+        buf.H3 = buf.H4 + buf.A + buf.BPrime;
+        buf.H4 = buf.H0 + buf.B + buf.CPrime;
+        buf.H0 = temp;
     }
 }

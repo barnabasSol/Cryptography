@@ -28,15 +28,15 @@ namespace Ripemd160.Utils.Extensions
             return string.Join("", value.Chunk(8).Reverse().Select(s => new string(s)));
         }
 
-        public static void PrintHash(this BufferProvider buf)
+        public static string HashResult(this BufferProvider buf)
         {
-            string h0 = BufferProvider.H0.ToLittleEndian();
-            string h1 = BufferProvider.H1.ToLittleEndian();
-            string h2 = BufferProvider.H2.ToLittleEndian();
-            string h3 = BufferProvider.H3.ToLittleEndian();
-            string h4 = BufferProvider.H4.ToLittleEndian();
+            string h0 = buf.H0.ToLittleEndian();
+            string h1 = buf.H1.ToLittleEndian();
+            string h2 = buf.H2.ToLittleEndian();
+            string h3 = buf.H3.ToLittleEndian();
+            string h4 = buf.H4.ToLittleEndian();
 
-            Console.WriteLine((h0 + h1 + h2 + h3 + h4).ToLower());
+            return (h0 + h1 + h2 + h3 + h4).ToLower();
         }
     }
 }
