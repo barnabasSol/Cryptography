@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ripemd160")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8debf6f5ae22a4c8482d93fa72c7acc504fbb53e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7b45fbd581a82127274c242b1839794cb0d8459")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ripemd160")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ripemd160")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

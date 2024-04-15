@@ -6,7 +6,7 @@ public sealed class CompressionProvider
 {
     public static void ComputeHash(char[] block, BufferProvider buf)
     {
-        var _32bits_word_chunk = block.Chunk(32).ToArray();
+        var _32bits_chunk = block.Chunk(32).ToArray();
 
         for (int i = 0; i < 80; i++)
         {
@@ -15,9 +15,9 @@ public sealed class CompressionProvider
                     buf.A
                     + FunctionProvider.Function(i, buf.B, buf.C, buf.D)
                     + Convert
-                        .ToUInt32(new string(_32bits_word_chunk[MessageWordSelect.ForValues[i]]), 2)
+                        .ToUInt32(new string(_32bits_chunk[MessageWordSelect.ForValues[i]]), 2)
                         .ToLittleEndianHex()
-                    + Constants.ToAddForValueAt(i)
+                    + Constant.ToAddForValueAt(i)
                 ).RotateLeft(ShiftProvider.LeftRotateAmounts[i]) + buf.E;
 
             buf.A = buf.E;
@@ -31,12 +31,9 @@ public sealed class CompressionProvider
                     buf.APrime
                     + FunctionProvider.Function(79 - i, buf.BPrime, buf.CPrime, buf.DPrime)
                     + Convert
-                        .ToUInt32(
-                            new string(_32bits_word_chunk[MessageWordSelect.ForPrimeValues[i]]),
-                            2
-                        )
+                        .ToUInt32(new string(_32bits_chunk[MessageWordSelect.ForPrimeValues[i]]), 2)
                         .ToLittleEndianHex()
-                    + Constants.ToAddForPrimeValueAt(i)
+                    + Constant.ToAddForPrimeValueAt(i)
                 ).RotateLeft(ShiftProvider.PrimeLeftRotateAmounts[i]) + buf.EPrime;
 
             buf.APrime = buf.EPrime;

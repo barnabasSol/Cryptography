@@ -1,6 +1,6 @@
 namespace Ripemd160.Utils;
 
-public sealed class Constants
+public sealed class Constant
 {
     private static readonly uint[] ForValues =
     [

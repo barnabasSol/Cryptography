@@ -14,7 +14,7 @@ namespace Testing
         [Fact]
         public void TestRIPEMD160Hash_SingleCharacter()
         {
-            Assert.Equal("bdc9d2d256b3ee9daae347be6f4dc835a467ffe", ComputeHash("a"));
+            Assert.Equal("0bdc9d2d256b3ee9daae347be6f4dc835a467ffe", ComputeHash("a"));
         }
 
         [Fact]
@@ -53,6 +53,24 @@ namespace Testing
             Assert.Equal(
                 "b0e20b6e3116640286ed3a87a5713079b21f5189",
                 ComputeHash("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+            );
+        }
+
+        [Fact]
+        public void TestRIPEMD160Hash_OneMillionAs()
+        {
+            Assert.Equal(
+                "52783243c1697bdbe16d37f97f68f08325dc1528",
+                ComputeHash(new string('a', 1_000_000))
+            );
+        }
+
+        [Fact]
+        public void TestRIPEMD160Hash_8TmiesNumber()
+        {
+            Assert.Equal(
+                "9b752e45573d4b39f4dbd3323cab82bf63326bfb",
+                ComputeHash(string.Concat(Enumerable.Repeat("1234567890", 8)))
             );
         }
 

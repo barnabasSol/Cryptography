@@ -1,15 +1,19 @@
 ﻿using Ripemd160.Utils;
 using Ripemd160.Utils.Extensions;
 
-string message = "abc";
-string input = InputProvider.InitialProcess(message);
-var chunk = input.Chunk(512);
-var buf = new BufferProvider();
-
-foreach (var block in chunk)
+internal class Program
 {
-    buf.Set();
-    CompressionProvider.ComputeHash(block, buf);
-}
+    static void Main(string[] i)
+    {
+        string input = InputProvider.InitialProcess(i[0]);
+        var chunk = input.Chunk(512);
+        var buf = new BufferProvider();
 
-Console.WriteLine(buf.HashResult());
+        foreach (var block in chunk)
+        {
+            buf.Set();
+            CompressionProvider.ComputeHash(block, buf);
+        }
+        Console.WriteLine(buf.HashResult(), ConsoleColor.Green);
+    }
+}
